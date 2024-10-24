@@ -1,0 +1,8 @@
+.home-container {
+  max-width: 1360px;
+  margin: 2rem auto;
+}
+
+.home-container img {
+  width: 100%;
+}

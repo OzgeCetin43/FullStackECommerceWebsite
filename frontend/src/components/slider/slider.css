@@ -1,0 +1,67 @@
+.slider-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.slider-info-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  padding: 1rem 4rem;
+}
+
+.slider-offer-text {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.slider-offer-text span {
+  background: linear-gradient(90deg, #2fb85a95, #fff);
+  padding: 0.5rem;
+  border-radius: 5rem;
+  font-weight: bolder;
+}
+
+.slider-title {
+  margin-top: 1rem !important;
+  text-transform: capitalize;
+  width: 80%;
+  line-height: 1.25 !important;
+  font-weight: bolder !important;
+}
+
+.slider-price span {
+  color: #d51243;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.slider-shop-button {
+  background-color: #233a95;
+  width: 25%;
+  margin: 1rem 0;
+  color: #fff;
+}
+
+.slider-action-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.slider-action-button {
+  background-color: #ccc;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.active-slider {
+  background-color: #ea2b0f;
+}

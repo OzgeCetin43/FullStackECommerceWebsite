@@ -1,0 +1,46 @@
+.country-modal {
+  height: 450px;
+}
+
+.country-modal-search-content {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+  border: 1px solid #f0f0f0;
+  height: 50px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
+
+.country-modal-search-input {
+  height: 40px;
+  background-color: transparent;
+  border: none;
+}
+
+.country-modal-search-input:hover,
+.country-modal-search-input:focus {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.country-list-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.country-list-item {
+  width: 98%;
+  justify-content: flex-start;
+  margin: 0.5rem 0;
+}
+
+.selected-country {
+  background-color: #f0f0f0;
+}
