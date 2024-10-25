@@ -9,8 +9,8 @@ const { Content } = Layout;
 export const Home = () => {
   return (
     <Content className="home-container">
-      <Slider />
       <SecureDeliveryBanner />
+      <Slider />
       <SpecialOffer />
     </Content>
   );
