@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Layout, Typography, Flex, Menu, Button, Input, List } from "antd";
+import { Layout, Typography, Flex, Menu, Button, Input, Divider } from "antd";
 import { Link } from "react-router-dom";
 import { SiSecurityscorecard } from "react-icons/si";
 import { IoIosArrowDown } from "react-icons/io";
@@ -67,10 +67,42 @@ const mainMenuItems = [
   },
 ];
 
-const allCategoriesMenuItem = [
+const allCategoriesMenuItems = [
   {
     label: <Link to="/fruits-and-vegetables">Fruits & Vegetables</Link>,
     key: "fruits-and-vegetables",
+    children: [
+      {
+        label: <Link to="/cuts-and-sprouts">Cuts & Sprouts</Link>,
+        key: "cuts-and-sprouts",
+      },
+      {
+        label: (
+          <Link to="/exotic-fruits-and-veggies">Exotic Fruits & Veggies</Link>
+        ),
+        key: "exotic-fruits-and-veggies",
+      },
+      {
+        label: <Link to="/fresh-fruits">Fresh Fruits</Link>,
+        key: "fresh-fruits",
+      },
+      {
+        label: <Link to="/fresh-vegetables">Fresh Vegetables</Link>,
+        key: "fresh-vegetables",
+      },
+      {
+        label: <Link to="/herbs-and-seasonings">Herbs & Seasonings</Link>,
+        key: "herbs-and-seasonings",
+      },
+      {
+        label: <Link to="/packed-produce">Packed Produce</Link>,
+        key: "packed-produce",
+      },
+      {
+        label: <Link to="/party-trays">Party Trays</Link>,
+        key: "party-trays",
+      },
+    ],
   },
   {
     label: <Link to="/meats-and-seafood">Meats & Seafood</Link>,
@@ -83,6 +115,46 @@ const allCategoriesMenuItem = [
   {
     label: <Link to="/beverages">Beverages</Link>,
     key: "beverages",
+    children: [
+      {
+        label: <Link to="/coffee">Coffee</Link>,
+        key: "coffee",
+      },
+      {
+        label: <Link to="/craft-beer">Craft Beer</Link>,
+        key: "craft-beer",
+      },
+      {
+        label: <Link to="/drink-boxes-and-pouches">Drink Boxes & Pouches</Link>,
+        key: "drink-boxes-and-pouches",
+      },
+      {
+        label: (
+          <Link to="/milk-and-plant-based-milk">Milk & Plant-based Milk</Link>
+        ),
+        key: "milk-and-plant-based-milk",
+      },
+      {
+        label: <Link to="/soda-and-pop">Soda & Pop</Link>,
+        key: "soda-and-pop",
+      },
+      {
+        label: <Link to="/sparkling-water">Sparkling Water</Link>,
+        key: "sparkling-water",
+      },
+      {
+        label: <Link to="/tea-and-kombucha">Tea & Kombucha</Link>,
+        key: "tea-and-kombucha",
+      },
+      {
+        label: <Link to="/water">Water</Link>,
+        key: "water",
+      },
+      {
+        label: <Link to="/wine">Wine</Link>,
+        key: "wine",
+      },
+    ],
   },
   {
     label: <Link to="/breads-and-bakery">Breads & Bakery</Link>,
@@ -99,6 +171,21 @@ const allCategoriesMenuItem = [
   {
     label: <Link to="/grocery-and-staples">Grocery & Staples</Link>,
     key: "grocery-and-staples",
+  },
+];
+
+const allCategoriesSpecialMenuItems = [
+  {
+    label: <Link to="/value-of-the-day">Value of the Day</Link>,
+    key: "value-of-the-day",
+  },
+  {
+    label: <Link to="/top-1000-offers">Top 1000 Offers</Link>,
+    key: "top-1000-offers",
+  },
+  {
+    label: <Link to="/new-arrivals">New Arrivals</Link>,
+    key: "new-arrivals",
   },
 ];
 
@@ -207,13 +294,19 @@ export const MainHeader = () => {
                 Total 63 Products
               </Text>
               {isAllCategoriesMenuOpen && (
-                <Content>
+                <Content className="all-categories-menu-content">
                   <Menu
                     onClick={handleMenuClick}
                     selectedKeys={[activeItem]}
                     mode="vertical"
-                    items={allCategoriesMenuItem}
-                    className="all-categories-menu"
+                    items={allCategoriesMenuItems}
+                  />
+                  <Divider className="menu-divider" />
+                  <Menu
+                    onClick={handleMenuClick}
+                    selectedKeys={[activeItem]}
+                    mode="vertical"
+                    items={allCategoriesSpecialMenuItems}
                   />
                 </Content>
               )}

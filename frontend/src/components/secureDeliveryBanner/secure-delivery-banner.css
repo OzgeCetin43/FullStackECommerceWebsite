@@ -1,0 +1,31 @@
+.secure-delivery-banner-content {
+  background: url("../../assets/home-banner-1.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f8efea;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #d51243;
+}
+
+.secure-delivery-text {
+  color: #d51243;
+  font-size: 1.25rem;
+}
+
+.secure-delivery-shop-button {
+  background-color: #d51243;
+  color: #fff;
+  border: none;
+  width: 200px;
+}
+
+.secure-delivery-shop-button:hover {
+  background-color: #d51243 !important;
+  color: #fff !important;
+}
