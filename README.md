@@ -1,3 +1,3 @@
 # FullStackECommerceWebsite
-## Home Page
-![screencapture-localhost-5173-2024-10-24-21_57_07](https://github.com/user-attachments/assets/f926998e-7302-4a2a-aada-8773c17196d2)
+### Home Page
+![screencapture-localhost-5173-2024-10-25-11_45_24](https://github.com/user-attachments/assets/f64fec21-27c1-46ca-a72b-676370657fff)
