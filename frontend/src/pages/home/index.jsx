@@ -1,6 +1,6 @@
 import { Layout } from "antd";
 
-import { SecureDeliveryBanner, Slider } from "../../components";
+import { SecureDeliveryBanner, Slider, SpecialOffer } from "../../components";
 
 import "./home.css";
 
@@ -11,6 +11,7 @@ export const Home = () => {
     <Content className="home-container">
       <Slider />
       <SecureDeliveryBanner />
+      <SpecialOffer />
     </Content>
   );
 };

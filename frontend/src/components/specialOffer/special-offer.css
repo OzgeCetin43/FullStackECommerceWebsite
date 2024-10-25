@@ -1,0 +1,68 @@
+.special-offer-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.special-offer-left-content,
+.special-offer-right-content {
+  flex: 1;
+  padding: 1rem;
+}
+
+.special-offer-left-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  gap: 0.25rem;
+}
+
+.special-offer-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.special-offer-title span {
+  color: #d51243;
+  text-decoration: underline;
+}
+
+.special-offer-text {
+  color: #888;
+  font-size: 0.75rem;
+  line-height: 2;
+}
+
+.special-offer-right-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.countdown-card {
+  background-color: #ed174a;
+  color: #fff;
+  font-size: 2rem;
+  width: 120px;
+  text-align: center;
+}
+
+.countdown-card div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.countdown-text {
+  color: #fff;
+  font-weight: bolder;
+}
+
+.countdown-separator {
+  font-size: 2rem;
+  margin: 0 1rem;
+  font-weight: bolder;
+  color: #ed174a;
+}
