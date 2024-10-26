@@ -2,6 +2,7 @@ import { Layout } from "antd";
 
 import {
   Categories,
+  Newsletter,
   SecureDeliveryBanner,
   Slider,
   SpecialOffer,
@@ -20,6 +21,7 @@ export const Home = () => {
       <Categories />
       <SpecialOffer />
       <SpecialOfferProductList />
+      <Newsletter />
     </Content>
   );
 };

@@ -1,0 +1,73 @@
+.newsletter-content {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: #233a95;
+  border-radius: 0.25rem;
+  padding: 2rem;
+}
+
+.newsletter-left-content,
+.newsletter-right-content {
+  flex: 1;
+}
+
+.newsletter-left-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.25rem;
+  padding: 2rem 4rem;
+}
+
+.newsletter-subtitle-text,
+.newsletter-title-text {
+  color: #fff;
+}
+
+.newsletter-title-text {
+  font-size: 1.75rem;
+}
+
+.newsletter-description-text {
+  color: #ffffff75;
+  width: 70%;
+  font-size: 0.75rem;
+}
+
+.newsletter-input-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  margin: 1rem 0;
+  padding: 0.5rem;
+}
+
+.newsletter-input {
+  background-color: #fff;
+  border: none;
+  padding: 0.25rem;
+}
+
+.newsletter-input:focus {
+  box-shadow: none !important;
+}
+
+.newsletter-subscribe-button {
+  background-color: #233a95;
+  color: #fff;
+  font-size: 1.15rem;
+}
+
+.newsletter-right-content {
+  position: relative;
+}
+
+.newsletter-right-content img {
+  position: absolute;
+  bottom: -137px;
+  right: 0;
+  width: 85%;
+}

@@ -5,3 +5,4 @@ export * from "./secureDeliveryBanner";
 export * from "./specialOffer";
 export * from "./specialOfferProductList";
 export * from "./categories";
+export * from "./newsletter";
