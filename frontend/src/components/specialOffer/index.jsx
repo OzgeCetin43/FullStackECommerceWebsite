@@ -65,7 +65,8 @@ export const SpecialOffer = () => {
         </Card>
         <span className="countdown-separator">:</span>
         <Card className="countdown-card">
-          {hours} <Text className="countdown-text">Hours</Text>
+          {hours <= 9 ? `0${hours}` : hours}{" "}
+          <Text className="countdown-text">Hours</Text>
         </Card>
         <span className="countdown-separator">:</span>
         <Card className="countdown-card">
