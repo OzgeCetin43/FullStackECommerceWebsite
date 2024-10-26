@@ -1,0 +1,63 @@
+.home-banners-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.home-banner-content {
+  position: relative;
+}
+
+.home-banner-content img {
+  height: 350px;
+  object-fit: cover;
+  border-radius: 0.25rem;
+}
+
+.home-banner-text-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 4rem;
+  gap: 0.5rem;
+}
+
+.banner-offer-text,
+.banner-title-text,
+.banner-text,
+.banner-price-text {
+  font-weight: bold;
+  color: #fff;
+}
+
+.banner-offer-text span {
+  background: linear-gradient(90deg, #2fb85a95, #fff);
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.banner-title-text {
+  font-size: 2.75rem;
+  width: 75%;
+}
+
+.banner-text {
+  color: #ffffff75;
+}
+
+.banner-price-text span {
+  font-size: 2rem;
+  color: #d51243;
+}
+
+.banner-shop-now-button {
+  width: 40%;
+  background-color: #d51243;
+  border: none;
+  color: #fff;
+}

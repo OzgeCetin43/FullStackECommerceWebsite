@@ -3,6 +3,7 @@ import { Layout } from "antd";
 import {
   Categories,
   FooterMenu,
+  HomeBanners,
   Newsletter,
   SecureDeliveryBanner,
   Services,
@@ -23,6 +24,7 @@ export const Home = () => {
       <Categories />
       <SpecialOffer />
       <SpecialOfferProductList />
+      <HomeBanners />
       <Newsletter />
       <Services />
       <FooterMenu />
