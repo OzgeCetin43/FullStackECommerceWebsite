@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { Button, Layout, Typography } from "antd";
+import { Button, Layout, Typography, Carousel } from "antd";
 
 import "./slider.css";
 
@@ -35,54 +34,24 @@ const { Content } = Layout;
 const { Text, Title } = Typography;
 
 export const Slider = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
   return (
-    <Content>
-      <Content className="slider-container">
-        <img
-          src={sliderData[activeIndex].img}
-          alt={sliderData[activeIndex].title}
-        />
-        <Content className="slider-info-content">
-          <Text className="slider-offer-text">
-            Exclusive Offer <span>-{sliderData[activeIndex].offRate}% Off</span>
-          </Text>
-          <Title className="slider-title">
-            {sliderData[activeIndex].title}
-          </Title>
-          <Text>Only this week. Don't miss...</Text>
-          <Text className="slider-price">
-            from <span>${sliderData[activeIndex].price}</span>
-          </Text>
-          <Button className="slider-shop-button">Shop Now</Button>
-          <Content className="slider-action-container">
-            <div
-              className={
-                activeIndex === 0
-                  ? "slider-action-button active-slider"
-                  : "slider-action-button"
-              }
-              onClick={() => setActiveIndex(0)}
-            />
-            <div
-              className={
-                activeIndex === 1
-                  ? "slider-action-button active-slider"
-                  : "slider-action-button"
-              }
-              onClick={() => setActiveIndex(1)}
-            />
-            <div
-              className={
-                activeIndex === 2
-                  ? "slider-action-button active-slider"
-                  : "slider-action-button"
-              }
-              onClick={() => setActiveIndex(2)}
-            />
+    <Carousel autoplay>
+      {sliderData.map((data) => (
+        <Content className="slider-container">
+          <img src={data.img} alt={data.title} />
+          <Content className="slider-info-content">
+            <Text className="slider-offer-text">
+              Exclusive Offer <span>-{data.offRate}% Off</span>
+            </Text>
+            <Title className="slider-title">{data.title}</Title>
+            <Text>Only this week. Don't miss...</Text>
+            <Text className="slider-price">
+              from <span>${data.price}</span>
+            </Text>
+            <Button className="slider-shop-button">Shop Now</Button>
           </Content>
         </Content>
-      </Content>
-    </Content>
+      ))}
+    </Carousel>
   );
 };
