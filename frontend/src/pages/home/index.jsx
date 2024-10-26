@@ -1,6 +1,7 @@
 import { Layout } from "antd";
 
 import {
+  Categories,
   SecureDeliveryBanner,
   Slider,
   SpecialOffer,
@@ -16,6 +17,7 @@ export const Home = () => {
     <Content className="home-container">
       <SecureDeliveryBanner />
       <Slider />
+      <Categories />
       <SpecialOffer />
       <SpecialOfferProductList />
     </Content>

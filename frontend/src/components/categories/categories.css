@@ -1,0 +1,27 @@
+.categories-row {
+  margin-top: 2rem;
+}
+
+.categories-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #f0f0f0;
+  cursor: pointer;
+}
+
+.categories-col:hover {
+  background-color: #fdfdfd;
+}
+
+.categories-col img {
+  width: 50% !important;
+  padding: 1rem;
+}
+
+.categories-name {
+  font-weight: bold;
+}
