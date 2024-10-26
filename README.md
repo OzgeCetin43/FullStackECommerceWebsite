@@ -1,3 +1,3 @@
 # Full Stack E-Commerce Website
 ### Home Page
-![screencapture-localhost-5173-2024-10-26-13_34_43](https://github.com/user-attachments/assets/5a4034c7-76e2-4bd5-a434-f2e9204bb77d)
+![screencapture-localhost-5173-2024-10-26-14_57_40](https://github.com/user-attachments/assets/f24d6109-4ad3-436f-af73-64173550db5b)
