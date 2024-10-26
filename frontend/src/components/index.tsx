@@ -6,3 +6,5 @@ export * from "./specialOffer";
 export * from "./specialOfferProductList";
 export * from "./categories";
 export * from "./newsletter";
+export * from "./services";
+export * from "./footerMenu";

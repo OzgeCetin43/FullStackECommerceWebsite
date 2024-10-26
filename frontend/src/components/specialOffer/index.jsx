@@ -45,8 +45,6 @@ export const SpecialOffer = () => {
     return () => clearInterval(interval);
   }, []);
 
-  console.log(`${days} - ${hours} : ${minutes} - ${seconds}`);
-
   return (
     <Content className="special-offer-content">
       <Content className="special-offer-left-content">

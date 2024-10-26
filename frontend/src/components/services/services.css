@@ -1,0 +1,41 @@
+.services-content {
+  margin-top: 2rem;
+}
+
+.services-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-list-item {
+  padding: 2rem !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem !important;
+}
+
+.services-list-item svg {
+  font-size: 1.25rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: #233a95;
+  color: #fff;
+  border-radius: 50%;
+  padding: 0.3rem;
+}
+
+.services-list-item-text {
+  font-weight: 600;
+  text-align: center;
+}
+
+.services-list-item-divider {
+  background-color: #00000025;
+  margin-left: 4rem;
+}
+
+.services-main-divider {
+  margin: 0;
+}

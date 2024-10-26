@@ -1,0 +1,23 @@
+.footer-menu-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+.footer-menu-col {
+  height: 425px;
+}
+
+.footer-menu-item-title-text {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.footer-menu-list-item {
+  border: none !important;
+}
+
+.footer-menu-link-text a {
+  color: #999;
+}
