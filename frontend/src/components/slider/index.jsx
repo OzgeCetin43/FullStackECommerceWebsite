@@ -35,7 +35,7 @@ const { Text, Title } = Typography;
 
 export const Slider = () => {
   return (
-    <Carousel autoplay>
+    <Carousel className="slider" autoplay dotPosition="left">
       {sliderData.map((data) => (
         <Content className="slider-container">
           <img src={data.img} alt={data.title} />
