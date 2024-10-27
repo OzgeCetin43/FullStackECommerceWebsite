@@ -37,7 +37,7 @@ export const Slider = () => {
   return (
     <Carousel className="slider" autoplay dotPosition="left">
       {sliderData.map((data) => (
-        <Content className="slider-container">
+        <Content key={data.id} className="slider-container">
           <img src={data.img} alt={data.title} />
           <Content className="slider-info-content">
             <Text className="slider-offer-text">

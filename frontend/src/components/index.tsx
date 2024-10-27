@@ -9,3 +9,4 @@ export * from "./newsletter";
 export * from "./services";
 export * from "./footerMenu";
 export * from "./homeBanners";
+export * from "./productModal";

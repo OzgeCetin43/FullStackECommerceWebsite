@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   Button,
   Card,
@@ -16,6 +17,8 @@ import product2 from "../../assets/special-offer-product-2.webp";
 import product3 from "../../assets/special-offer-product-3.webp";
 import product4 from "../../assets/special-offer-product-4.webp";
 import product5 from "../../assets/special-offer-product-5.webp";
+
+import { ProductModal } from "../productModal";
 
 import "./special-offer-product-list.css";
 
@@ -78,58 +81,83 @@ const productList = [
 ];
 
 export const SpecialOfferProductList = () => {
+  const [isProductModalOpen, setIsProductModalOpen] = useState(false);
+  const [activeProduct, setActiveProduct] = useState();
+
+  const modalOkHandler = () => setIsProductModalOpen(false);
+
+  const modalCancelHandler = () => setIsProductModalOpen(false);
+
+  const showProductDetailHandler = (item) => {
+    setIsProductModalOpen(true);
+    setActiveProduct(item);
+  };
+
   return (
-    <Content className="product-list-content">
-      <Row gutter={[0, 0]} className="product-list-row">
-        {productList.map((item) => (
-          <Col span={4} key={item.id} className="product-list-column">
-            <Card className="product-list-card">
-              <Text className="product-list-percentage-text">
-                {item.percentage}%
-              </Text>
-              {item?.label && (
-                <Text
-                  className={`product-list-label-text ${item?.label === "Organic" ? "organic-label" : "recommended-label"}`}
-                >
-                  {item?.label}
+    <>
+      <Content className="product-list-content">
+        <Row gutter={[0, 0]} className="product-list-row">
+          {productList.map((item) => (
+            <Col span={4} key={item.id} className="product-list-column">
+              <Card className="product-list-card">
+                <Text className="product-list-percentage-text">
+                  {item.percentage}%
                 </Text>
-              )}
-              <Content className="product-list-action-content">
-                <Button className="product-list-action-button">
-                  <LuExpand />
+                {item?.label && (
+                  <Text
+                    className={`product-list-label-text ${item?.label === "Organic" ? "organic-label" : "recommended-label"}`}
+                  >
+                    {item?.label}
+                  </Text>
+                )}
+                <Content className="product-list-action-content">
+                  <Button
+                    className="product-list-action-button"
+                    onClick={() => showProductDetailHandler(item)}
+                  >
+                    <LuExpand />
+                  </Button>
+                  <Button className="product-list-action-button">
+                    <FaHeart />
+                  </Button>
+                </Content>
+                <img src={item.image} alt={item.name} />
+                <Content className="product-list-price-content">
+                  <Text className="product-list-old-price">
+                    ${item.oldPrice.toFixed(2)}
+                  </Text>
+                  <Text className="product-list-new-price">
+                    ${item.newPrice.toFixed(2)}
+                  </Text>
+                </Content>
+                <Text className="product-list-name">{item.name}</Text>
+                <Text className="product-list-in-stock-text">In Stock</Text>
+                <Content className="product-list-rate-content">
+                  <Rate disabled defaultValue={item.rate} />
+                  <Text className="product-list-rate-text">({item.rate})</Text>
+                </Content>
+                <Content className="product-list-progress-content">
+                  <Progress percent={item.availableStock} showInfo={false} />
+                  <Text className="product-list-available-stock-text">
+                    the available products : <span>{item.availableStock}</span>
+                  </Text>
+                </Content>
+                <Button className="product-list-add-cart-button">
+                  Add to Cart
                 </Button>
-                <Button className="product-list-action-button">
-                  <FaHeart />
-                </Button>
-              </Content>
-              <img src={item.image} alt={item.name} />
-              <Content className="product-list-price-content">
-                <Text className="product-list-old-price">
-                  ${item.oldPrice.toFixed(2)}
-                </Text>
-                <Text className="product-list-new-price">
-                  ${item.newPrice.toFixed(2)}
-                </Text>
-              </Content>
-              <Text className="product-list-name">{item.name}</Text>
-              <Text className="product-list-in-stock-text">In Stock</Text>
-              <Content className="product-list-rate-content">
-                <Rate disabled defaultValue={item.rate} />
-                <Text className="product-list-rate-text">({item.rate})</Text>
-              </Content>
-              <Content className="product-list-progress-content">
-                <Progress percent={item.availableStock} showInfo={false} />
-                <Text className="product-list-available-stock-text">
-                  the available products : <span>{item.availableStock}</span>
-                </Text>
-              </Content>
-              <Button className="product-list-add-cart-button">
-                Add to Cart
-              </Button>
-            </Card>
-          </Col>
-        ))}
-      </Row>
-    </Content>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+      </Content>
+      {isProductModalOpen && (
+        <ProductModal
+          open={isProductModalOpen}
+          onOk={modalOkHandler}
+          onCancel={modalCancelHandler}
+          activeProduct={activeProduct}
+        />
+      )}
+    </>
   );
 };
