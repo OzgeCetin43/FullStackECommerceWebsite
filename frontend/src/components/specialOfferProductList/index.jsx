@@ -36,6 +36,10 @@ const productList = [
     availableStock: 66,
     percentage: 19,
     label: "Organic",
+    text: "Indulge in the creamy, delicious flavor of Field Roast Chao Cheese Creamy Original. This dairy-free cheese is made from a blend of coconut oil and fermented tofu, offering a rich and satisfying taste that melts beautifully. Perfect for sandwiches, burgers, or as a topping for your favorite dishes, Chao Cheese is a versatile alternative for cheese lovers and those seeking plant-based options. Enjoy a guilt-free indulgence that’s rich in flavor without compromising your dietary choices.",
+    reviewerCount: 968,
+    sku: "F95MK",
+    category: "Grocery & Staples",
   },
   {
     id: 2,
@@ -47,6 +51,10 @@ const productList = [
     availableStock: 46,
     percentage: 19,
     label: "Recommended",
+    text: "Enjoy the rich and creamy taste of Chobani Complete Vanilla Greek Yogurt. Made with high-quality ingredients and no added sugars, this yogurt is packed with 20 grams of protein per serving, making it an excellent choice for a nutritious snack or breakfast. The delightful vanilla flavor enhances your favorite recipes, whether you’re blending it into smoothies, dolloping it on pancakes, or enjoying it straight from the tub. With probiotics for digestive health, this yogurt supports your wellness journey.",
+    reviewerCount: 736,
+    sku: "ML76AP",
+    category: "Breakfast & Dairy",
   },
   {
     id: 3,
@@ -57,6 +65,10 @@ const productList = [
     rate: 5,
     availableStock: 32,
     percentage: 16,
+    text: "Indulge in the gourmet flavor of Encore Seafoods Stuffed Alaskan Salmon. This premium salmon fillet is carefully stuffed with a delightful blend of crab meat, herbs, and spices, creating a savory dish that’s perfect for any occasion. Sourced from the pristine waters of Alaska, our salmon is rich in omega-3 fatty acids and delivers a buttery texture that melts in your mouth. Ideal for a quick weeknight dinner or an impressive dish for guests, simply bake or grill for a restaurant-quality experience at home.",
+    reviewerCount: 120,
+    sku: "A9UKLA7",
+    category: "Meats & Seafood",
   },
   {
     id: 4,
@@ -67,6 +79,10 @@ const productList = [
     rate: 2,
     availableStock: 27,
     percentage: 47,
+    text: "Savor the rich and indulgent flavor of Haagen-Dazs Caramel Cone Ice Cream. This luxurious ice cream is crafted with the finest ingredients, featuring a creamy caramel base swirled with crunchy bits of cone and ribbons of delectable caramel sauce. Each spoonful offers a delightful mix of textures and flavors, making it the perfect treat for any occasion. Whether enjoyed on its own or as a topping for desserts, this ice cream is a true celebration of taste.",
+    reviewerCount: 229,
+    sku: "UKSA79",
+    category: "Frozen Foods",
   },
   {
     id: 5,
@@ -77,6 +93,10 @@ const productList = [
     rate: 3,
     availableStock: 58,
     percentage: 15,
+    text: "Enhance your morning coffee experience with Nestle Original Coffee-Mate Coffee Creamer. This non-dairy creamer is crafted to deliver a rich and creamy taste that perfectly complements your favorite coffee. With a smooth texture and a hint of sweetness, it transforms your cup into a delightful treat without the need for milk or cream. Ideal for those who prefer a lactose-free option, Coffee-Mate Original adds that perfect touch of indulgence to your daily brew.",
+    reviewerCount: 975,
+    sku: "SOBFA7",
+    category: "Breakfast & Dairy",
   },
 ];
 

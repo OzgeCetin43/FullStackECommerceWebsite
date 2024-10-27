@@ -119,3 +119,12 @@
   background-color: #233a95;
   color: #fff;
 }
+
+.product-category-text {
+  font-size: 0.75rem;
+  color: #999;
+}
+
+.product-category-text span {
+  font-weight: 600;
+}
