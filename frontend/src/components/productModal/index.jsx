@@ -32,7 +32,7 @@ export const ProductModal = ({ activeProduct, ...rest }) => {
             {Math.floor(Math.random() * 1000)} Reviews
           </Text>
         </Content>
-        <Content type="vertical" className="product-modal-content" />
+        <Divider type="vertical" className="product-modal-divider" />
         <Content className="product-detail-header-right-content">
           <Text className="product-detail-sku-text">
             SKU: <span>{generateRandomSKU()}</span>
