@@ -17,6 +17,11 @@ import product2 from "../../assets/special-offer-product-2.webp";
 import product3 from "../../assets/special-offer-product-3.webp";
 import product4 from "../../assets/special-offer-product-4.webp";
 import product5 from "../../assets/special-offer-product-5.webp";
+import productDetail1 from "../../assets/special-offer-product-3-detail-1.webp";
+import productDetail2 from "../../assets/special-offer-product-4-detail-1.webp";
+import productDetail3 from "../../assets/special-offer-product-4-detail-2.webp";
+import productDetail4 from "../../assets/special-offer-product-5-detail-1.webp";
+import productDetail5 from "../../assets/special-offer-product-5-detail-2.webp";
 
 import { ProductModal } from "../productModal";
 
@@ -69,6 +74,7 @@ const productList = [
     reviewerCount: 120,
     sku: "A9UKLA7",
     category: "Meats & Seafood",
+    detailImages: [{ id: 6, image: productDetail1 }],
   },
   {
     id: 4,
@@ -83,6 +89,10 @@ const productList = [
     reviewerCount: 229,
     sku: "UKSA79",
     category: "Frozen Foods",
+    detailImages: [
+      { id: 7, image: productDetail2 },
+      { id: 8, image: productDetail3 },
+    ],
   },
   {
     id: 5,
@@ -97,6 +107,10 @@ const productList = [
     reviewerCount: 975,
     sku: "SOBFA7",
     category: "Breakfast & Dairy",
+    detailImages: [
+      { id: 9, image: productDetail4 },
+      { id: 10, image: productDetail5 },
+    ],
   },
 ];
 

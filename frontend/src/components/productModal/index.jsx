@@ -8,6 +8,7 @@ const { Text } = Typography;
 
 export const ProductModal = ({ activeProduct, ...rest }) => {
   const [count, setCount] = useState(1);
+  const [activeImage, setActiveImage] = useState(activeProduct.image);
 
   const incrementCountHandler = () => setCount((prev) => prev + 1);
 
@@ -42,7 +43,35 @@ export const ProductModal = ({ activeProduct, ...rest }) => {
               {activeProduct.label}
             </Text>
           )}
-          <img src={activeProduct.image} alt={activeProduct.name} />
+          <img
+            src={activeImage}
+            alt={activeProduct.name}
+            className="product-modal-image"
+          />
+          <Content className="product-images-content">
+            <img
+              src={activeProduct.image}
+              alt={activeProduct.name}
+              onClick={() => setActiveImage(activeProduct.image)}
+              className={
+                activeImage === activeProduct.image
+                  ? "product-selected-image"
+                  : ""
+              }
+            />
+            {activeProduct?.detailImages?.length > 0 &&
+              activeProduct?.detailImages?.map((item) => (
+                <img
+                  key={item.id}
+                  src={item.image}
+                  alt={activeProduct.name}
+                  onClick={() => setActiveImage(item.image)}
+                  className={
+                    activeImage === item.image ? "product-selected-image" : ""
+                  }
+                />
+              ))}
+          </Content>
         </Content>
         <Content className="product-detail-body-right-content">
           <Content className="product-detail-price-content">
