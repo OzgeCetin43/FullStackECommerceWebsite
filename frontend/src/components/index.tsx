@@ -10,3 +10,4 @@ export * from "./services";
 export * from "./footerMenu";
 export * from "./homeBanners";
 export * from "./productModal";
+export * from "./bestSellers";
