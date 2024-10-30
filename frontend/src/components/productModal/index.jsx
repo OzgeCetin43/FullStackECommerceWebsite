@@ -12,7 +12,8 @@ export const ProductModal = ({ activeProduct, ...rest }) => {
 
   const incrementCountHandler = () => setCount((prev) => prev + 1);
 
-  const decrementCountHandler = () => setCount((prev) => prev - 1);
+  const decrementCountHandler = () =>
+    setCount((prev) => (prev !== 0 ? prev - 1 : prev));
 
   return (
     <Modal title={activeProduct.name} {...rest} width={1000}>

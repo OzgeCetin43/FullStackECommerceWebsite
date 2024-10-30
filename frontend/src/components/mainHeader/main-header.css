@@ -143,16 +143,16 @@
 }
 
 .header-cart-button {
-  background-color: #fff1ee;
+  background-color: #d5124320;
   border: none;
-  color: #ea2b0f;
+  color: #d51243;
 }
 
 .header-cart-badge {
   position: absolute;
   top: 0.25rem;
   right: 0;
-  background-color: #ea2b0f;
+  background-color: #d51243;
   width: 1.25rem;
   height: 1.25rem;
   display: flex;

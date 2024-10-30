@@ -45,93 +45,6 @@
   justify-content: center;
 }
 
-.best-sellers-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid #f0f0f0;
-  border-radius: 0;
-  position: relative;
-  height: 400px;
-}
-
-.best-sellers-percentage-text {
-  background-color: #2bbef9;
-  color: #fff;
-  position: absolute;
-  top: 0.5rem;
-  left: 0.5rem;
-  padding: 0.25rem 1rem;
-  border-radius: 0.5rem;
-  font-size: 0.75rem;
-  font-weight: bold;
-}
-
-.best-sellers-label-text {
-  position: absolute;
-  top: 2.5rem;
-  left: 0.5rem;
-  z-index: 100;
-  color: #fff;
-  padding: 0.25rem 0.5rem;
-  border-radius: 0.5rem;
-  font-size: 0.5rem;
-}
-
-.best-sellers-card img {
-  height: 200px;
-  object-fit: cover;
-}
-
-.best-sellers-name-text {
-  font-weight: bolder;
-  display: block;
-  text-align: center;
-  font-size: 0.95rem;
-  height: 50px;
-}
-
-.best-sellers-in-stock-text {
-  display: block;
-  text-align: center;
-  background-color: #e5f8ed;
-  color: #2fb85a;
-  margin: 1rem 0;
-  border-radius: 0.25rem;
-  font-weight: bold;
-}
-
-.best-sellers-rate-content {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.best-sellers-reviewer-count-text {
-  color: #999;
-  font-size: 0.75rem;
-}
-
-.best-sellers-price-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  margin: 1rem 0;
-}
-
-.best-sellers-old-price-text {
-  color: #999;
-  text-decoration: line-through;
-}
-
-.best-sellers-new-price-text,
-.best-sellers-price-range-text {
-  color: #d51243;
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
 .best-sellers-banner-col {
   position: relative;
 }
@@ -170,6 +83,6 @@
 
 .best-sellers-banner {
   border: 1px solid #f0f0f0;
-  height: 800px;
+  height: 900px;
   object-fit: cover;
 }

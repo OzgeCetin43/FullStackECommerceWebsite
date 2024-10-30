@@ -11,6 +11,8 @@ import product7 from "../../assets/best-seller-7.webp";
 import product8 from "../../assets/best-seller-8.webp";
 import banner from "../../assets/best-seller-banner.jpg";
 
+import { BestSellersItem } from "../bestSellersItem";
+
 import "./best-sellers.css";
 
 const { Content } = Layout;
@@ -129,100 +131,14 @@ export const BestSellers = () => {
             <Row gutter={[0, 0]}>
               {bestSellersData.slice(0, 2).map((item) => (
                 <Col span={12} key={item.id}>
-                  <Card className="best-sellers-card">
-                    {item?.percentage && (
-                      <Text className="best-sellers-percentage-text">
-                        {item?.percentage}%
-                      </Text>
-                    )}
-                    {item?.label && (
-                      <Text
-                        className={`best-sellers-label-text ${
-                          item?.label === "Organic"
-                            ? "organic-label"
-                            : "recommended-label"
-                        }`}
-                      >
-                        {item?.label}
-                      </Text>
-                    )}
-                    <img src={item.image} alt={item.name} />
-                    <Text className="best-sellers-name-text">{item.name}</Text>
-                    <Text className="best-sellers-in-stock-text">In Stock</Text>
-                    <Content className="best-sellers-rate-content">
-                      <Rate disabled defaultValue={2} />
-                      <Text className="best-sellers-reviewer-count-text">
-                        ({item.reviewerCount})
-                      </Text>
-                    </Content>
-                    <Content className="best-sellers-price-content">
-                      {item?.oldPrice && (
-                        <Text className="best-sellers-old-price-text">
-                          ${item.oldPrice.toFixed(2)}
-                        </Text>
-                      )}
-                      {item?.newPrice && (
-                        <Text className="best-sellers-new-price-text">
-                          ${item.newPrice.toFixed(2)}
-                        </Text>
-                      )}
-                      {item?.minPrice && item?.maxPrice && (
-                        <Text className="best-sellers-price-range-text">
-                          ${item?.minPrice} - ${item?.maxPrice}
-                        </Text>
-                      )}
-                    </Content>
-                  </Card>
+                  <BestSellersItem item={item} />
                 </Col>
               ))}
             </Row>
             <Row gutter={[0, 0]}>
               {bestSellersData.slice(2, 4).map((item) => (
                 <Col span={12} key={item.id}>
-                  <Card className="best-sellers-card">
-                    {item?.percentage && (
-                      <Text className="best-sellers-percentage-text">
-                        {item?.percentage}%
-                      </Text>
-                    )}
-                    {item?.label && (
-                      <Text
-                        className={`best-sellers-label-text ${
-                          item?.label === "Organic"
-                            ? "organic-label"
-                            : "recommended-label"
-                        }`}
-                      >
-                        {item?.label}
-                      </Text>
-                    )}
-                    <img src={item.image} alt={item.name} />
-                    <Text className="best-sellers-name-text">{item.name}</Text>
-                    <Text className="best-sellers-in-stock-text">In Stock</Text>
-                    <Content className="best-sellers-rate-content">
-                      <Rate disabled defaultValue={2} />
-                      <Text className="best-sellers-reviewer-count-text">
-                        ({item.reviewerCount})
-                      </Text>
-                    </Content>
-                    <Content className="best-sellers-price-content">
-                      {item?.oldPrice && (
-                        <Text className="best-sellers-old-price-text">
-                          ${item.oldPrice.toFixed(2)}
-                        </Text>
-                      )}
-                      {item?.newPrice && (
-                        <Text className="best-sellers-new-price-text">
-                          ${item.newPrice.toFixed(2)}
-                        </Text>
-                      )}
-                      {item?.minPrice && item?.maxPrice && (
-                        <Text className="best-sellers-price-range-text">
-                          ${item?.minPrice} - ${item?.maxPrice}
-                        </Text>
-                      )}
-                    </Content>
-                  </Card>
+                  <BestSellersItem item={item} />
                 </Col>
               ))}
             </Row>
@@ -243,100 +159,14 @@ export const BestSellers = () => {
             <Row gutter={[0, 0]}>
               {bestSellersData.slice(4, 6).map((item) => (
                 <Col span={12} key={item.id}>
-                  <Card className="best-sellers-card">
-                    {item?.percentage && (
-                      <Text className="best-sellers-percentage-text">
-                        {item?.percentage}%
-                      </Text>
-                    )}
-                    {item?.label && (
-                      <Text
-                        className={`best-sellers-label-text ${
-                          item?.label === "Organic"
-                            ? "organic-label"
-                            : "recommended-label"
-                        }`}
-                      >
-                        {item?.label}
-                      </Text>
-                    )}
-                    <img src={item.image} alt={item.name} />
-                    <Text className="best-sellers-name-text">{item.name}</Text>
-                    <Text className="best-sellers-in-stock-text">In Stock</Text>
-                    <Content className="best-sellers-rate-content">
-                      <Rate disabled defaultValue={2} />
-                      <Text className="best-sellers-reviewer-count-text">
-                        ({item.reviewerCount})
-                      </Text>
-                    </Content>
-                    <Content className="best-sellers-price-content">
-                      {item?.oldPrice && (
-                        <Text className="best-sellers-old-price-text">
-                          ${item.oldPrice.toFixed(2)}
-                        </Text>
-                      )}
-                      {item?.newPrice && (
-                        <Text className="best-sellers-new-price-text">
-                          ${item.newPrice.toFixed(2)}
-                        </Text>
-                      )}
-                      {item?.minPrice && item?.maxPrice && (
-                        <Text className="best-sellers-price-range-text">
-                          ${item?.minPrice} - ${item?.maxPrice}
-                        </Text>
-                      )}
-                    </Content>
-                  </Card>
+                  <BestSellersItem item={item} />
                 </Col>
               ))}
             </Row>
             <Row gutter={[0, 0]}>
               {bestSellersData.slice(6, 8).map((item) => (
                 <Col span={12} key={item.id}>
-                  <Card className="best-sellers-card">
-                    {item?.percentage && (
-                      <Text className="best-sellers-percentage-text">
-                        {item?.percentage}%
-                      </Text>
-                    )}
-                    {item?.label && (
-                      <Text
-                        className={`best-sellers-label-text ${
-                          item?.label === "Organic"
-                            ? "organic-label"
-                            : "recommended-label"
-                        }`}
-                      >
-                        {item?.label}
-                      </Text>
-                    )}
-                    <img src={item.image} alt={item.name} />
-                    <Text className="best-sellers-name-text">{item.name}</Text>
-                    <Text className="best-sellers-in-stock-text">In Stock</Text>
-                    <Content className="best-sellers-rate-content">
-                      <Rate disabled defaultValue={2} />
-                      <Text className="best-sellers-reviewer-count-text">
-                        ({item.reviewerCount})
-                      </Text>
-                    </Content>
-                    <Content className="best-sellers-price-content">
-                      {item?.oldPrice && (
-                        <Text className="best-sellers-old-price-text">
-                          ${item.oldPrice.toFixed(2)}
-                        </Text>
-                      )}
-                      {item?.newPrice && (
-                        <Text className="best-sellers-new-price-text">
-                          ${item.newPrice.toFixed(2)}
-                        </Text>
-                      )}
-                      {item?.minPrice && item?.maxPrice && (
-                        <Text className="best-sellers-price-range-text">
-                          ${item?.minPrice} - ${item?.maxPrice}
-                        </Text>
-                      )}
-                    </Content>
-                  </Card>
+                  <BestSellersItem item={item} />
                 </Col>
               ))}
             </Row>
