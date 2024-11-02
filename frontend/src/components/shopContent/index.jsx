@@ -1,5 +1,13 @@
 import { useState } from "react";
-import { Layout, Select, Typography, Row, Col, Pagination } from "antd";
+import {
+  Layout,
+  Select,
+  Typography,
+  Row,
+  Col,
+  Pagination,
+  Divider,
+} from "antd";
 import { IoMenu } from "react-icons/io5";
 import { FiGrid } from "react-icons/fi";
 import { BsGrid3X3GapFill } from "react-icons/bs";
@@ -12,8 +20,10 @@ import product4 from "../../assets/listing-product-4.webp";
 import product5 from "../../assets/listing-product-5.webp";
 import product6 from "../../assets/listing-product-6.webp";
 
-import "./shop-content.css";
 import { ShopListingCard } from "../shopListingCard";
+import { FooterMenu } from "../footerMenu";
+
+import "./shop-content.css";
 
 const { Content } = Layout;
 const { Text } = Typography;
@@ -274,6 +284,8 @@ export const ShopContent = () => {
         total={50}
         className="shop-listing-pagination"
       />
+      <Divider />
+      <FooterMenu />
     </Content>
   );
 };
