@@ -4,5 +4,5 @@
 ### Home Page - Product Modal
 ![Adsız](https://github.com/user-attachments/assets/5897a777-26cb-4e06-9227-7557d6dc92cb)
 ### Shop Page
-![screencapture-localhost-5173-shop-2024-10-30-22_57_42](https://github.com/user-attachments/assets/abae142d-b1a4-4387-a242-fe4432adb286)
+![screencapture-localhost-5173-shop-2024-11-02-17_03_06](https://github.com/user-attachments/assets/93f202bb-2952-4ed4-ad79-86425f28a569)
 
