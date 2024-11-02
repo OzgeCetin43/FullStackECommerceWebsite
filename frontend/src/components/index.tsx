@@ -14,3 +14,4 @@ export * from "./bestSellers";
 export * from "./bestSellersItem";
 export * from "./shopSidebar";
 export * from "./shopContent";
+export * from "./shopListingCard";

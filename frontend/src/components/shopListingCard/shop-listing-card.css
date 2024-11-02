@@ -1,0 +1,91 @@
+.shop-listing-card {
+  border-radius: 0px !important;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.shop-listing-card.one div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shop-listing-card img {
+  width: 90%;
+}
+
+.shop-listing-card.one img {
+  width: 75%;
+}
+
+.shop-listing-percentage-text {
+  background-color: #2bbef9;
+  color: #fff;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  padding: 0.25rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  z-index: 100;
+}
+
+.shop-listing-label-text {
+  position: absolute;
+  top: 2.5rem;
+  left: 0.5rem;
+  z-index: 100;
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.5rem;
+}
+
+.shop-listing-product-name-text,
+.shop-listing-in-stock-text,
+.shop-listing-rate {
+  display: block;
+  text-align: center !important;
+  font-weight: bolder;
+  font-size: 0.95rem;
+  margin: 0.5rem 0;
+}
+
+.shop-listing-in-stock-text {
+  color: #2fb85a;
+}
+
+.shop-listing-price-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+  gap: 0.5rem;
+}
+
+.shop-listing-old-price {
+  color: #999;
+  text-decoration: line-through;
+}
+
+.shop-listing-new-price,
+.shop-listing-price-range {
+  font-size: 1.5rem;
+  color: #d51243;
+  font-weight: bold;
+}
+
+.shop-listing-add-to-cart-button {
+  background-color: #d51243;
+  color: #fff;
+  width: 100%;
+}
+
+.shop-listing-card.one button {
+  width: 50%;
+  margin: auto;
+  display: block;
+}
