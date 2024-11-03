@@ -7,10 +7,12 @@ import {
   Col,
   Pagination,
   Divider,
+  Button,
 } from "antd";
 import { IoMenu } from "react-icons/io5";
 import { FiGrid } from "react-icons/fi";
 import { BsGrid3X3GapFill } from "react-icons/bs";
+import { TbGrid4X4 } from "react-icons/tb";
 
 import banner from "../../assets/shop-content-banner.jpg";
 import product1 from "../../assets/listing-product-1.webp";
@@ -19,6 +21,11 @@ import product3 from "../../assets/listing-product-3.webp";
 import product4 from "../../assets/listing-product-4.webp";
 import product5 from "../../assets/listing-product-5.webp";
 import product6 from "../../assets/listing-product-6.webp";
+import product7 from "../../assets/listing-product-7.webp";
+import product8 from "../../assets/listing-product-8.webp";
+import shopBanner1 from "../../assets/shop-banner-1.png";
+import shopBanner2 from "../../assets/shop-banner-2.png";
+import shopBanner3 from "../../assets/shop-banner-3.png";
 
 import { ShopListingCard } from "../shopListingCard";
 import { FooterMenu } from "../footerMenu";
@@ -174,10 +181,60 @@ const listingData = [
       "Typically allergen-free, but always check for potential cross-contamination depending on the supplier. If you have specific questions or need more information, feel free to ask!",
     category: "Breakfast & Dairy",
   },
+  {
+    id: 7,
+    percentage: 29,
+    image: product7,
+    name: "Fresh Organic Broccoli Crowns (1kg)",
+    rate: 3,
+    label: "Organic",
+    oldPrice: 6.77,
+    newPrice: 4.85,
+    sku: "ERE398",
+    description:
+      "Fresh Organic Broccoli Crowns are the flowering tops of the broccoli plant, known for their vibrant green color and nutrient-rich profile. These crowns are harvested at peak freshness and are a versatile vegetable that can be enjoyed raw, steamed, roasted, or added to various dishes.",
+    info: [
+      "Calories: Approximately 31",
+      "Total Fat: 0.4g",
+      "Sodium: 64mg",
+      "Total Carbohydrates: 6g",
+      "Dietary Fiber: 2.4g",
+      "Sugars: 1.5g",
+      "Protein: 2.5g",
+    ],
+    infoDetail:
+      "Generally allergen-free. Always check for cross-contamination based on handling practices. If you have specific questions or need more information, feel free to ask!",
+    category: "Fruits & Vegetables",
+  },
+  {
+    id: 8,
+    percentage: 199,
+    image: product8,
+    name: "Chobani Complete Vanilla Greek Yogurt (1kg)",
+    rate: 5,
+    label: "Recommended",
+    oldPrice: 5.49,
+    newPrice: 4.49,
+    sku: "ML76AP",
+    description:
+      "Chobani Complete Vanilla Greek Yogurt is a creamy, rich yogurt made from high-quality ingredients, perfect for those looking for a nutritious snack or a versatile ingredient in various recipes. It’s packed with protein and features a delightful vanilla flavor, making it a delicious choice for breakfast or as a snack.",
+    info: [
+      "Calories: Approximately 130",
+      "Total Fat: 4g",
+      "Saturated Fat: 2.5g",
+      "Protein: 20g",
+      "Total Carbohydrates: 12g",
+      "Sodium: 500mg",
+      "Sugars: 5g (includes naturally occurring sugars)",
+    ],
+    infoDetail:
+      "Contains milk. Check packaging for specific allergen details. If you have more questions or need additional information, feel free to ask!",
+    category: "Breakfast & Dairy",
+  },
 ];
 
 export const ShopContent = () => {
-  const [gridView, setGridView] = useState("three");
+  const [gridView, setGridView] = useState("four");
 
   return (
     <Content className="shop-main-content">
@@ -211,6 +268,10 @@ export const ShopContent = () => {
                 onClick={() => setGridView("three")}
                 className={gridView === "three" ? "active-grid-view" : ""}
               />
+              <TbGrid4X4
+                onClick={() => setGridView("four")}
+                className={gridView === "four" ? "active-grid-view" : ""}
+              />
             </Content>
             <Content className="shop-listing-show-by-content">
               <Text className="shop-listing-show-text">Show:</Text>
@@ -227,56 +288,52 @@ export const ShopContent = () => {
             </Content>
           </Content>
         </Content>
-        {gridView === "three" ? (
-          <>
-            <Row gutter={[0, 0]}>
-              {listingData.slice(0, 3).map((item) => (
-                <Col span={8} key={item.id}>
-                  <ShopListingCard item={item} />
-                </Col>
-              ))}
-            </Row>
-            <Row gutter={[0, 0]}>
-              {listingData.slice(3, 6).map((item) => (
-                <Col span={8} key={item.id}>
-                  <ShopListingCard item={item} />
-                </Col>
-              ))}
-            </Row>
-          </>
-        ) : gridView === "two" ? (
-          <>
-            <Row gutter={[0, 0]}>
-              {listingData.slice(0, 2).map((item) => (
-                <Col span={12} key={item.id}>
-                  <ShopListingCard item={item} />
-                </Col>
-              ))}
-            </Row>
-            <Row gutter={[0, 0]}>
-              {listingData.slice(2, 4).map((item) => (
-                <Col span={12} key={item.id}>
-                  <ShopListingCard item={item} />
-                </Col>
-              ))}
-            </Row>
-            <Row gutter={[0, 0]}>
-              {listingData.slice(4, 6).map((item) => (
-                <Col span={12} key={item.id}>
-                  <ShopListingCard item={item} />
-                </Col>
-              ))}
-            </Row>
-          </>
-        ) : (
-          listingData.map((item) => (
-            <Row gutter={[0, 0]} key={item.id}>
-              <Col span={24}>
-                <ShopListingCard item={item} className={gridView} />
-              </Col>
-            </Row>
-          ))
-        )}
+        {gridView === "four"
+          ? Array.from(
+              { length: Math.round(listingData.length / 4) },
+              (_, i) => i
+            ).map((i) => (
+              <Row gutter={[0, 0]} key={i}>
+                {listingData.slice(i * 4, (i + 1) * 4).map((item) => (
+                  <Col span={6} key={item.name}>
+                    <ShopListingCard item={item} />
+                  </Col>
+                ))}
+              </Row>
+            ))
+          : gridView === "three"
+            ? Array.from(
+                { length: Math.round(listingData.length / 3) },
+                (_, i) => i
+              ).map((i) => (
+                <Row gutter={[0, 0]} key={i}>
+                  {listingData.slice(i * 3, (i + 1) * 3).map((item) => (
+                    <Col span={8} key={item.name}>
+                      <ShopListingCard item={item} />
+                    </Col>
+                  ))}
+                </Row>
+              ))
+            : gridView === "two"
+              ? Array.from(
+                  { length: Math.round(listingData.length / 2) },
+                  (_, i) => i
+                ).map((i) => (
+                  <Row gutter={[0, 0]} key={i}>
+                    {listingData.slice(i * 2, (i + 1) * 2).map((item) => (
+                      <Col span={12} key={item.name}>
+                        <ShopListingCard item={item} className={gridView} />
+                      </Col>
+                    ))}
+                  </Row>
+                ))
+              : listingData.map((item) => (
+                  <Row gutter={[0, 0]} key={item.id}>
+                    <Col span={24}>
+                      <ShopListingCard item={item} className={gridView} />
+                    </Col>
+                  </Row>
+                ))}
       </Content>
       <Pagination
         align="center"
@@ -284,6 +341,29 @@ export const ShopContent = () => {
         total={50}
         className="shop-listing-pagination"
       />
+      <Content className="shop-bottom-banner-content">
+        <Content className="shop-banner-item-content">
+          <Text className="shop-bottom-banner-text">
+            Everyday Fresh & Clean with Our Products
+          </Text>
+          <Button className="shop-banner-shop-now-button">Shop Now</Button>
+          <img src={shopBanner1} alt="shop banner" />
+        </Content>
+        <Content className="shop-banner-item-content">
+          <Text className="shop-bottom-banner-text">
+            Make your Breakfast Healthy and Easy
+          </Text>
+          <Button className="shop-banner-shop-now-button">Shop Now</Button>
+          <img src={shopBanner2} alt="shop banner" />
+        </Content>
+        <Content className="shop-banner-item-content">
+          <Text className="shop-bottom-banner-text">
+            The best Organic Products Online
+          </Text>
+          <Button className="shop-banner-shop-now-button">Shop Now</Button>
+          <img src={shopBanner3} alt="shop banner" />
+        </Content>
+      </Content>
       <Divider />
       <FooterMenu />
     </Content>

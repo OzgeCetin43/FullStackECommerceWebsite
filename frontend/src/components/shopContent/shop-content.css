@@ -103,3 +103,40 @@
 .shop-listing-pagination {
   margin: 2rem 0;
 }
+
+.shop-bottom-banner-content {
+  display: flex;
+  align-items: center;
+  max-height: 200px;
+  gap: 0.5rem;
+}
+
+.shop-banner-item-content {
+  width: 32%;
+  position: relative;
+}
+
+.shop-banner-item-content img {
+  width: 100%;
+  border-radius: 0.25rem;
+}
+
+.shop-bottom-banner-text {
+  position: absolute;
+  width: 42%;
+  top: 45%;
+  left: 1rem;
+  transform: translateY(-50%);
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #00000085;
+  margin-bottom: 1rem;
+}
+
+.shop-banner-shop-now-button {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  background-color: #2fb85a;
+  color: #fff;
+}
