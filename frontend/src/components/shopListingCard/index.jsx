@@ -5,9 +5,9 @@ import "./shop-listing-card.css";
 const { Content } = Layout;
 const { Text } = Typography;
 
-export const ShopListingCard = ({ item, className }) => {
+export const ShopListingCard = ({ item, className, onClick }) => {
   return (
-    <Card className={`shop-listing-card ${className}`}>
+    <Card className={`shop-listing-card ${className}`} onClick={onClick}>
       <Content className="shop-listing-card-content">
         {item?.percentage && (
           <Text className="shop-listing-percentage-text">

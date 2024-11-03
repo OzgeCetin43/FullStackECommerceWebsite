@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   height: 475px;
+  cursor: pointer;
 }
 
 .shop-listing-card.one div,
