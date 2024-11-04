@@ -5,7 +5,7 @@
 ![Adsız](https://github.com/user-attachments/assets/5897a777-26cb-4e06-9227-7557d6dc92cb)
 ### Shop Page
 ![screencapture-localhost-5173-shop-2024-11-03-17_24_45](https://github.com/user-attachments/assets/e78e8935-3d7b-489b-9086-8c77e9556faf)
+### Product Detail Page
+![screencapture-localhost-5173-products-1-2024-11-04-22_27_24](https://github.com/user-attachments/assets/43234231-6545-4429-8db5-ff69ce1da27c)
 ### Login Page
 ![screencapture-localhost-5173-login-2024-11-03-16_23_30](https://github.com/user-attachments/assets/fece2256-21c5-49e5-9aba-44db8183eaf9)
-### Product Detail Page
-![screencapture-localhost-5173-products-1-2024-11-03-23_16_34 (1)](https://github.com/user-attachments/assets/622f2b40-5d59-4a05-9fdd-11a12924b590)
