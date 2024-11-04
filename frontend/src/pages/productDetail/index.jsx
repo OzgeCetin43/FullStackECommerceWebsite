@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import { Layout, Card, Typography, Rate, Divider, Button } from "antd";
+import { Layout, Card, Typography, Rate, Divider, Button, Tabs } from "antd";
+import { FaTruckFast, FaSackDollar } from "react-icons/fa6";
+import { LuMilk } from "react-icons/lu";
 
 import { listingData } from "../../assets/data/listingData";
 
@@ -15,6 +17,39 @@ export const ProductDetail = () => {
   const { id } = useParams();
   const data = listingData.filter((item) => item.id === Number(id))[0];
 
+  const tabs = [
+    {
+      key: 1,
+      label: "Description",
+      children: (
+        <Content className="product-detail-tab-addition-information-content">
+          <Text className="product-detail-tab-description-text">
+            {data?.description}
+          </Text>
+          <Text className="product-detail-tab-description-text">
+            {data?.infoDetail}
+          </Text>
+        </Content>
+      ),
+    },
+    {
+      key: 2,
+      label: "Additional Information",
+      children: (
+        <Content className="product-detail-tab-addition-information-content">
+          {data?.info?.map((item, index) => (
+            <Text
+              key={index}
+              className="product-detail-additional-information-text"
+            >
+              {item}
+            </Text>
+          ))}
+        </Content>
+      ),
+    },
+  ];
+
   const incrementCountHandler = () => setCount((prev) => prev + 1);
 
   const decrementCountHandler = () =>
@@ -26,11 +61,13 @@ export const ProductDetail = () => {
         <Text className="product-detail-main-name">{data?.name}</Text>
         <Content className="product-detail-header-content">
           {data?.brand && (
-            <Text className="product-detail-main-brand-text">
-              Brands: <b>{data?.brand}</b>
-            </Text>
+            <>
+              <Text className="product-detail-main-brand-text">
+                Brands: <b>{data?.brand}</b>
+              </Text>
+              <Divider type="vertical" />
+            </>
           )}
-          <Divider type="vertical" />
           <Rate
             disabled
             defaultValue={data?.rate}
@@ -113,17 +150,20 @@ export const ProductDetail = () => {
             </Text>
             <Content className="product-detail-info-content">
               <Text className="product-detail-info-text">
-                Free Shipping apply to all orders over $100
+                <FaTruckFast /> Free Shipping apply to all orders over $100.
               </Text>
               <Text className="product-detail-info-text">
-                Guranteed 100% Organic from natural farmas
+                <LuMilk /> Guranteed 100% Organic from natural farmas.
               </Text>
               <Text className="product-detail-info-text">
-                1 Day Returns if you change your mind
+                <FaSackDollar /> Day Returns if you change your mind.
               </Text>
             </Content>
           </Content>
         </Content>
+      </Card>
+      <Card className="product-detail-second-card">
+        <Tabs defaultActiveKey="1" items={tabs} />
       </Card>
     </Content>
   );
