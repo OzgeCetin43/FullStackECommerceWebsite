@@ -9,3 +9,5 @@
 ![screencapture-localhost-5173-products-1-2024-11-05-18_41_55](https://github.com/user-attachments/assets/4fee3431-1113-4e93-aaa4-8b2619391340)
 ### Login Page
 ![screencapture-localhost-5173-login-2024-11-03-16_23_30](https://github.com/user-attachments/assets/fece2256-21c5-49e5-9aba-44db8183eaf9)
+### Register Page
+![screencapture-localhost-5173-register-2024-11-05-21_00_12](https://github.com/user-attachments/assets/ed9c443f-2f02-49d3-947b-5914316e85fb)
