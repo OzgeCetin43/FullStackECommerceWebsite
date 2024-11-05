@@ -6,6 +6,6 @@
 ### Shop Page
 ![screencapture-localhost-5173-shop-2024-11-03-17_24_45](https://github.com/user-attachments/assets/e78e8935-3d7b-489b-9086-8c77e9556faf)
 ### Product Detail Page
-![screencapture-localhost-5173-products-1-2024-11-04-22_27_24](https://github.com/user-attachments/assets/43234231-6545-4429-8db5-ff69ce1da27c)
+![screencapture-localhost-5173-products-1-2024-11-05-18_41_55](https://github.com/user-attachments/assets/4fee3431-1113-4e93-aaa4-8b2619391340)
 ### Login Page
 ![screencapture-localhost-5173-login-2024-11-03-16_23_30](https://github.com/user-attachments/assets/fece2256-21c5-49e5-9aba-44db8183eaf9)
