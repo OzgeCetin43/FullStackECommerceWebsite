@@ -4,6 +4,13 @@ import { Layout, Card, Typography, Rate, Divider, Button, Tabs } from "antd";
 import { FaTruckFast, FaSackDollar } from "react-icons/fa6";
 import { LuMilk } from "react-icons/lu";
 
+import {
+  Categories,
+  Newsletter,
+  SpecialOffer,
+  SpecialOfferProductList,
+} from "../../components";
+
 import { listingData } from "../../assets/data/listingData";
 
 import "./product-detail.css";
@@ -57,6 +64,7 @@ export const ProductDetail = () => {
 
   return (
     <Content className="product-detail-main-container">
+      <SpecialOffer />
       <Card className="product-detail-main-card">
         <Text className="product-detail-main-name">{data?.name}</Text>
         <Content className="product-detail-header-content">
@@ -165,6 +173,9 @@ export const ProductDetail = () => {
       <Card className="product-detail-second-card">
         <Tabs defaultActiveKey="1" items={tabs} />
       </Card>
+      <Categories />
+      <SpecialOfferProductList />
+      <Newsletter />
     </Content>
   );
 };

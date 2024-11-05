@@ -1,10 +1,9 @@
 .product-detail-main-container {
-  background-color: #fafafa;
-  padding: 4rem;
+  padding: 2rem 4rem;
 }
 
 .product-detail-main-card {
-  width: 90%;
+  width: 100%;
   margin: auto;
 }
 
@@ -167,7 +166,7 @@
 
 .product-detail-second-card {
   margin: 1rem auto;
-  width: 90%;
+  width: 100%;
 }
 
 .product-detail-tab-addition-information-content {
