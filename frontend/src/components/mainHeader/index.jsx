@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Layout, Typography, Flex, Menu, Button, Input, Divider } from "antd";
 import { Link } from "react-router-dom";
 import { SiSecurityscorecard } from "react-icons/si";
@@ -195,6 +196,8 @@ export const MainHeader = () => {
   const [selectedCountry, setSelectedCountry] = useState("");
   const [isAllCategoriesMenuOpen, setIsAllCategoriesMenuOpen] = useState(false);
 
+  const navigate = useNavigate();
+
   const handleMenuClick = (e) => setActiveItem(e.key);
 
   const countryModalOkHandler = () => setIsCountryModalOpen(false);
@@ -265,6 +268,7 @@ export const MainHeader = () => {
                 className="header-user-button"
                 shape="circle"
                 icon={<FaUser />}
+                onClick={() => navigate("/login")}
               />
             </Content>
             <Content className="header-price-content">
@@ -275,6 +279,7 @@ export const MainHeader = () => {
                 className="header-cart-button"
                 shape="circle"
                 icon={<IoBagHandleSharp />}
+                onClick={() => navigate("/cart")}
               />
               <Text className="header-cart-badge">0</Text>
             </Content>
