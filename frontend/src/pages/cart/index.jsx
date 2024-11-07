@@ -1,12 +1,27 @@
 import { Link } from "react-router-dom";
-import { Layout, Typography, Table, Card, Divider, Button } from "antd";
+import {
+  Layout,
+  Typography,
+  Table,
+  Card,
+  Divider,
+  Button,
+  Progress,
+  Input,
+} from "antd";
 import { ImCross } from "react-icons/im";
 
 import product1 from "../../assets/listing-product-1.webp";
 import product2 from "../../assets/listing-product-2.webp";
 import product3 from "../../assets/listing-product-3.webp";
 
-import { Services, Newsletter, FooterMenu } from "../../components";
+import {
+  SecureDeliveryBanner,
+  Services,
+  Newsletter,
+  FooterMenu,
+  FooterContact,
+} from "../../components";
 
 import "./cart.css";
 
@@ -67,13 +82,25 @@ const columns = [
 export const Cart = () => {
   return (
     <Content className="cart-main-container">
+      <SecureDeliveryBanner />
       <Content className="cart-content">
-        <Table
-          columns={columns}
-          bordered
-          dataSource={cartData}
-          className="cart-table"
-        />
+        <Content className="cart-table-content">
+          <Card>
+            <Text className="cart-free-shipping-text">
+              Add <span>$19.96</span> to cart and get free shipping!
+            </Text>
+            <Text className="cart-product-count-text">
+              There are <span>3</span> products in your cart.
+            </Text>
+            <Progress percent={70} strokeColor="#d51243" />
+          </Card>
+          <Table
+            columns={columns}
+            bordered
+            dataSource={cartData}
+            className="cart-table"
+          />
+        </Content>
         <Card className="cart-totals-card">
           <Text className="cart-totals-text">Cart Totals</Text>
           <Divider className="cart-divider" />
@@ -92,6 +119,10 @@ export const Cart = () => {
             <Text className="cart-total-price-text">$35.04</Text>
           </Content>
           <Divider className="cart-divider" />
+          <Content className="cart-apply-coupon-content">
+            <Input className="cart-coupon-input" />
+            <Button className="cart-apply-coupon-button">Apply Coupon</Button>
+          </Content>
           <Button className="cart-checkout-button">Proceed to checkout</Button>
         </Card>
       </Content>
@@ -99,6 +130,7 @@ export const Cart = () => {
       <Newsletter />
       <Divider />
       <FooterMenu />
+      <FooterContact />
     </Content>
   );
 };

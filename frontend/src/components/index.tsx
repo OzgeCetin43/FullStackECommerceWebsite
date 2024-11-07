@@ -15,3 +15,4 @@ export * from "./bestSellersItem";
 export * from "./shopSidebar";
 export * from "./shopContent";
 export * from "./shopListingCard";
+export * from "./footerContact";
