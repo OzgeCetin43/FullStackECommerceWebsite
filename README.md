@@ -8,7 +8,7 @@
 ### Product Detail Page
 ![screencapture-localhost-5173-products-1-2024-11-05-18_41_55](https://github.com/user-attachments/assets/4fee3431-1113-4e93-aaa4-8b2619391340)
 ### Cart Page
-![screencapture-localhost-5173-cart-2024-11-06-19_18_29](https://github.com/user-attachments/assets/2707fd7f-b65f-47dc-a94c-9fc814e89c12)
+![screencapture-localhost-5173-cart-2024-11-07-20_10_23](https://github.com/user-attachments/assets/2203e5a1-8030-444b-ba8c-0426c27f3a8a)
 ### Login Page
 ![screencapture-localhost-5173-login-2024-11-03-16_23_30](https://github.com/user-attachments/assets/fece2256-21c5-49e5-9aba-44db8183eaf9)
 ### Register Page
