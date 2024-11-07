@@ -1,4 +1,5 @@
 # Full Stack E-Commerce Website
+## Front-end
 ### Home Page
 ![screencapture-localhost-5173-2024-10-30-20_47_22](https://github.com/user-attachments/assets/1349368f-0ea5-4baf-9696-b27850a627db)
 ### Home Page - Product Modal
@@ -13,3 +14,6 @@
 ![screencapture-localhost-5173-login-2024-11-03-16_23_30](https://github.com/user-attachments/assets/fece2256-21c5-49e5-9aba-44db8183eaf9)
 ### Register Page
 ![screencapture-localhost-5173-register-2024-11-05-21_00_12](https://github.com/user-attachments/assets/ed9c443f-2f02-49d3-947b-5914316e85fb)
+## Admin
+### Sales Analytics
+![screencapture-localhost-5174-2024-11-07-22_42_12](https://github.com/user-attachments/assets/70376cd5-325c-4e0a-9399-105871bad716)
