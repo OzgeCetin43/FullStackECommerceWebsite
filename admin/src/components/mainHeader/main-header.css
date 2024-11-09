@@ -4,7 +4,7 @@
   width: 100%;
   padding: 0 1rem;
   gap: 1rem;
-  background-color: #2242c695;
+  background-color: #035ecf;
 }
 
 .header-left-content {
@@ -83,7 +83,7 @@
   position: absolute;
   bottom: -0.05rem;
   right: 0.15rem;
-  background-color: #3ac677;
+  background-color: #00ba9d;
   color: #fff;
   font-size: 0.75rem;
   width: 0.65rem;

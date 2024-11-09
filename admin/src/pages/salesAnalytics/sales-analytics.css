@@ -1,5 +1,30 @@
 .sales-analytics-container {
-  width: 100% !important;
-  margin: auto;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.sales-analytics-title-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.75rem !important;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.sales-analytics-title-text {
+  flex: 1;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.sales-analytics-today-text {
+  text-align: right;
+  max-width: fit-content;
+  padding: 0.5rem;
+  background-color: #f0f0f0;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: bold;
 }
