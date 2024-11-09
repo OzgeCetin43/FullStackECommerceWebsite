@@ -1,18 +1,7 @@
 .header {
   display: flex;
   align-items: center;
-  width: calc(100% - 200px) !important;
-  margin-left: 200px;
-  padding: 0 1rem;
-  gap: 1rem;
-  background-color: #2242c695;
-}
-
-.header-full {
-  display: flex;
-  align-items: center;
-  width: calc(100% - 80px) !important;
-  margin-left: 80px;
+  width: 100%;
   padding: 0 1rem;
   gap: 1rem;
   background-color: #2242c695;

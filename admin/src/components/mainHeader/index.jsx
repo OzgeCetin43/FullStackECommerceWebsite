@@ -75,7 +75,7 @@ export const MainHeader = ({ isSidebarOpen, setIsSidebarOpen }) => {
   const [isChatOpen, setIsChatOpen] = useState(false);
 
   return (
-    <Header className={isSidebarOpen ? "header-full" : "header"}>
+    <Header className="header">
       <Content className="header-left-content">
         <Button
           type="text"

@@ -1,0 +1,13 @@
+.main-layout {
+  background-color: #fff;
+  padding-left: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-layout-content {
+  width: 100%;
+  flex: none;
+  padding: 1rem;
+}
