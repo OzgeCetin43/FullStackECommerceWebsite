@@ -16,4 +16,4 @@
 ![screencapture-localhost-5173-register-2024-11-05-21_00_12](https://github.com/user-attachments/assets/ed9c443f-2f02-49d3-947b-5914316e85fb)
 ## Admin
 ### Sales Analytics
-![screencapture-localhost-5174-2024-11-07-22_42_12](https://github.com/user-attachments/assets/70376cd5-325c-4e0a-9399-105871bad716)
+![screencapture-localhost-5174-2024-11-09-15_29_22](https://github.com/user-attachments/assets/431bbab6-b8ba-410d-98a2-caf40e5f4be1)
