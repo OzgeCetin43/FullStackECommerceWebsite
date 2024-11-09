@@ -16,7 +16,7 @@ const MainLayout = () => {
           isSidebarOpen={isSidebarOpen}
           setIsSidebarOpen={setIsSidebarOpen}
         />
-        <Content>Content</Content>
+        <Content></Content>
       </Layout>
     </Layout>
   );
