@@ -1,4 +1,5 @@
 export * from "./home";
+export * from "./aboutUs";
 export * from "./shop";
 export * from "./productDetail";
 export * from "./cart";
