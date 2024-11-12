@@ -6,6 +6,8 @@
 ![Adsız](https://github.com/user-attachments/assets/5897a777-26cb-4e06-9227-7557d6dc92cb)
 ### About Us Page
 ![screencapture-localhost-5173-about-us-2024-11-11-18_10_20](https://github.com/user-attachments/assets/a9751dee-b5a0-4ee2-a6ae-1667fe3862fe)
+### My Account - Orders Tab
+![screencapture-localhost-5173-my-account-2024-11-12-20_27_01](https://github.com/user-attachments/assets/8969fd29-a64d-4d7b-9744-b10641f80e3c)
 ### Shop Page
 ![screencapture-localhost-5173-shop-2024-11-03-17_24_45](https://github.com/user-attachments/assets/e78e8935-3d7b-489b-9086-8c77e9556faf)
 ### Product Detail Page
