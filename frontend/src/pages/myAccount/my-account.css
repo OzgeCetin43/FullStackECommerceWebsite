@@ -1,0 +1,8 @@
+.my-account-container {
+  max-width: 1360px;
+  margin: 2rem auto;
+}
+
+.my-account-tabs a {
+  color: inherit;
+}

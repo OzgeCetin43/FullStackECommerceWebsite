@@ -1,0 +1,8 @@
+.my-account-orders-table th {
+  text-align: center !important;
+}
+
+.my-account-orders-table td {
+  text-align: center !important;
+  padding: 0.5rem !important;
+}

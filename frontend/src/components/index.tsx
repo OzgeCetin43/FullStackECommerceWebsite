@@ -16,3 +16,4 @@ export * from "./shopSidebar";
 export * from "./shopContent";
 export * from "./shopListingCard";
 export * from "./footerContact";
+export * from "./myAccountOrders";
