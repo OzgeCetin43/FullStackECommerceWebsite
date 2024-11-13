@@ -4,6 +4,7 @@ import { Layout, Tabs, Typography } from "antd";
 import {
   FooterContact,
   FooterMenu,
+  MyAccountAddress,
   MyAccountOrders,
   MyAccountTrackOrder,
   SpecialOffer,
@@ -28,7 +29,7 @@ const items = [
   {
     key: "my-address",
     label: "My Address",
-    children: "Content of Tab Pane 3",
+    children: <MyAccountAddress />,
   },
   {
     key: "account-details",
