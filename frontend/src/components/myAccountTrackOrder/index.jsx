@@ -31,7 +31,11 @@ export const MyAccountTrackOrder = () => {
           <Input placeholder="Email you used during checkout" />
         </Form.Item>
         <Form.Item>
-          <Button type="primary" className="my-account-track-order-button">
+          <Button
+            type="primary"
+            htmlType="submit"
+            className="my-account-track-order-button"
+          >
             Track
           </Button>
         </Form.Item>
