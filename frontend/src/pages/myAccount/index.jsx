@@ -5,6 +5,7 @@ import {
   FooterContact,
   FooterMenu,
   MyAccountOrders,
+  MyAccountTrackOrder,
   SpecialOffer,
   SpecialOfferProductList,
 } from "../../components";
@@ -12,7 +13,6 @@ import {
 import "./my-account.css";
 
 const { Content } = Layout;
-const { Text } = Typography;
 
 const items = [
   {
@@ -23,7 +23,7 @@ const items = [
   {
     key: "track-your-order",
     label: "Track Your Order",
-    children: "Content of Tab Pane 2",
+    children: <MyAccountTrackOrder />,
   },
   {
     key: "my-address",

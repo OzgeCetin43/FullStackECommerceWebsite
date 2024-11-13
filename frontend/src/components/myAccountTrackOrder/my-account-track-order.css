@@ -1,0 +1,27 @@
+.my-account-track-order-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.my-account-track-order-title-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.my-account-track-order-description-text {
+  font-size: 0.75rem;
+  color: #999;
+  line-height: 2;
+}
+
+.my-account-track-order-form {
+  border: 1px solid #f0f0f0;
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+
+.my-account-track-order-button {
+  background-color: #d51243;
+}
