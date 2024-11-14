@@ -12,6 +12,8 @@
 ![screencapture-localhost-5173-my-account-2024-11-13-18_46_01](https://github.com/user-attachments/assets/fdd69fd0-e629-49d7-9c70-2e21f5b1cdc2)
 ### My Account - My Address Tab
 ![screencapture-localhost-5173-my-account-2024-11-13-20_48_49](https://github.com/user-attachments/assets/af0a2fba-d175-4975-aab5-42c8a3766e08)
+### My Account - Account Details Tab
+![screencapture-localhost-5173-my-account-2024-11-14-21_01_39](https://github.com/user-attachments/assets/20f511e7-6971-4809-a3c1-081af5b350af)
 ### Shop Page
 ![screencapture-localhost-5173-shop-2024-11-03-17_24_45](https://github.com/user-attachments/assets/e78e8935-3d7b-489b-9086-8c77e9556faf)
 ### Product Detail Page
