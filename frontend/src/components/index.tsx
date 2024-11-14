@@ -19,3 +19,4 @@ export * from "./footerContact";
 export * from "./myAccountOrders";
 export * from "./myAccountTrackOrder";
 export * from "./myAccountAddress";
+export * from "./myAccountDetails";

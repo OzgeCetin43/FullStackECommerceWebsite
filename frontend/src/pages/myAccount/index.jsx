@@ -5,6 +5,7 @@ import {
   FooterContact,
   FooterMenu,
   MyAccountAddress,
+  MyAccountDetails,
   MyAccountOrders,
   MyAccountTrackOrder,
   SpecialOffer,
@@ -34,7 +35,7 @@ const items = [
   {
     key: "account-details",
     label: "Account Details",
-    children: "Content of Tab Pane 4",
+    children: <MyAccountDetails />,
   },
   {
     key: "logout",
