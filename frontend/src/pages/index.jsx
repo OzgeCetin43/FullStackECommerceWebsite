@@ -4,5 +4,6 @@ export * from "./myAccount";
 export * from "./shop";
 export * from "./productDetail";
 export * from "./cart";
+export * from "./wishlist";
 export * from "./login";
 export * from "./register";

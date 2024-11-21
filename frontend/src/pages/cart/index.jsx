@@ -28,7 +28,7 @@ import "./cart.css";
 const { Content } = Layout;
 const { Text } = Typography;
 
-export const cartData = [
+const cartData = [
   {
     id: 1,
     image: product1,

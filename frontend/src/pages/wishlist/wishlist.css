@@ -1,0 +1,46 @@
+.wishlist-main-container {
+  max-width: 1360px;
+  margin: 2rem auto;
+}
+
+.wishlist-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.wishlist-title-text {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.wishlist-table th {
+  text-align: center !important;
+}
+
+.wishlist-table td {
+  text-align: center !important;
+  padding: 0.5rem !important;
+}
+
+.wishlist-product-image {
+  width: 50px;
+  height: 50px;
+}
+
+.wishlist-status-text {
+  color: #2fb85a;
+  font-weight: bold;
+}
+
+.wishlist-add-to-cart-button {
+  background-color: #233a95;
+  color: #fff;
+}
+
+.wishlist-description-text {
+  font-weight: 600;
+  line-height: 2;
+  font-size: 0.75rem;
+}

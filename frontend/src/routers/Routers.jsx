@@ -9,6 +9,7 @@ import {
   ProductDetail,
   Register,
   Shop,
+  Wishlist,
 } from "../pages";
 
 const Routers = () => {
@@ -20,6 +21,7 @@ const Routers = () => {
       <Route path="/shop" element={<Shop />} />
       <Route path="/products/:id" element={<ProductDetail />} />
       <Route path="/cart" element={<Cart />} />
+      <Route path="/wishlist" element={<Wishlist />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
     </Routes>
