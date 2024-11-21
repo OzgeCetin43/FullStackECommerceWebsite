@@ -6,14 +6,16 @@
 ![Adsız](https://github.com/user-attachments/assets/5897a777-26cb-4e06-9227-7557d6dc92cb)
 ### About Us Page
 ![screencapture-localhost-5173-about-us-2024-11-11-18_10_20](https://github.com/user-attachments/assets/a9751dee-b5a0-4ee2-a6ae-1667fe3862fe)
-### My Account - Orders Tab
+### My Account Page - Orders Tab
 ![screencapture-localhost-5173-my-account-2024-11-12-20_27_01](https://github.com/user-attachments/assets/8969fd29-a64d-4d7b-9744-b10641f80e3c)
-### My Account - Track Your Order Tab
+### My Account Page - Track Your Order Tab
 ![screencapture-localhost-5173-my-account-2024-11-13-18_46_01](https://github.com/user-attachments/assets/fdd69fd0-e629-49d7-9c70-2e21f5b1cdc2)
-### My Account - My Address Tab
+### My Account Page - My Address Tab
 ![screencapture-localhost-5173-my-account-2024-11-13-20_48_49](https://github.com/user-attachments/assets/af0a2fba-d175-4975-aab5-42c8a3766e08)
-### My Account - Account Details Tab
+### My Account Page - Account Details Tab
 ![screencapture-localhost-5173-my-account-2024-11-14-21_01_39](https://github.com/user-attachments/assets/20f511e7-6971-4809-a3c1-081af5b350af)
+## Wishlist Page
+![screencapture-localhost-5173-wishlist-2024-11-21-21_28_02](https://github.com/user-attachments/assets/4f00c1da-8717-419c-841f-f8bc8bf019f8)
 ### Shop Page
 ![screencapture-localhost-5173-shop-2024-11-03-17_24_45](https://github.com/user-attachments/assets/e78e8935-3d7b-489b-9086-8c77e9556faf)
 ### Product Detail Page
